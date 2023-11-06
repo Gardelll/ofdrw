@@ -781,7 +781,7 @@ public abstract class AWTMaker {
                 if ("0.0".equals(s))
                     color[i] = 0;
                 else
-                    color[i] = Integer.parseInt(s);
+                    color[i] = Math.round(Float.parseFloat(s));
             }
         }
         switch (type) {
