@@ -83,7 +83,7 @@ public abstract class STBase implements Serializable {
      * @return Double 或 0
      */
     public static Integer toInt(String str) {
-        Integer res = num(str, Integer::parseInt);
+        Integer res = num(str, s -> Math.round(Float.parseFloat(s)));
         return res == null ? 0 : res;
     }
 

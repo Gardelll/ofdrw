@@ -260,7 +260,7 @@ public class ST_Array extends STBase implements Cloneable {
             // 16进制数字
             return Integer.parseInt(s.substring(1), 16);
         } else {
-            return Integer.parseInt(s);
+            return Math.round(Float.parseFloat(s));
         }
     }
 
